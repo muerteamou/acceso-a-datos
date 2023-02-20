@@ -204,6 +204,7 @@ public class VistaJugador {
 		jPaneDetalle.setLayout(null);
 
 		JPanel panel_2 = new JPanel();
+		panel_2.setForeground(new Color(0, 128, 255));
 		panel_2.setBorder(new TitledBorder(null, "Equipo", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		panel_2.setBounds(10, 22, 350, 268);
 		jPaneDetalle.add(panel_2);
