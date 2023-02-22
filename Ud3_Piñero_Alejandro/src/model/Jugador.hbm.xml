@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 19 feb 2023 20:26:35 by Hibernate Tools 4.3.6.Final -->
+<!-- Generated 20 feb 2023 15:27:44 by Hibernate Tools 4.3.6.Final -->
 <hibernate-mapping>
     <class name="model.Jugador" table="jugador" catalog="nba" optimistic-lock="version">
         <id name="codigo" type="java.lang.Integer">

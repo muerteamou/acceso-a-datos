@@ -17,6 +17,8 @@ import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.ImageIcon;
 
+import tools.EquipoVistaQuery;
+
 public class Programa {
 
 	private JFrame frame;
@@ -106,6 +108,10 @@ public class Programa {
 		btnBuscar.setIcon(new ImageIcon(Programa.class.getResource("/icons/busqueda.png")));
 		btnBuscar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				if(e.getSource() == btnBuscar ) {
+					EquipoVistaQuery equipoVistaQuery = new EquipoVistaQuery();
+					equipoVistaQuery.mostrarEquipo(tfBuscar.getText());
+				}
 			}
 		});
 		btnBuscar.setFont(new Font("Verdana", Font.BOLD, 14));
